@@ -21,7 +21,7 @@ interface BottomSheetProps {
 // Three snap points: expanded (top), collapsed (normal), minimized (handle-only)
 const COLLAPSED_PEEK_PX = 420;
 const MINIMIZED_PEEK_PX = 80;
-const VELOCITY_THRESHOLD = 720;
+const VELOCITY_THRESHOLD = 800;
 
 export default function BottomSheet({
   children,

@@ -43,7 +43,7 @@ export default function ResultsSheet({
   }, []);
 
   const maxStops = isMobile ? MAX_STOPS_MOBILE : MAX_STOPS_DESKTOP;
-  const sheetMaxHeight = isMobile ? '51vh' : '65vh';
+  const sheetMaxHeight = isMobile ? '60vh' : '72vh';
 
   const handleToggleRoute = (restaurant: Restaurant) => {
     const isInRoute = routeStops.some((r) => r.id === restaurant.id);
@@ -54,6 +54,8 @@ export default function ResultsSheet({
       return;
     }
 
+    // Select the restaurant to trigger sheet expansion
+    onRestaurantClick(restaurant);
     onToggleRouteStop(restaurant);
     setLimitMessage(null);
   };

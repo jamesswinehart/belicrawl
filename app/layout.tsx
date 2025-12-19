@@ -2,12 +2,15 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Beli Trip Planner',
-  description: 'Discover restaurants in your chosen neighborhood',
+  title: 'Beli Crawl',
+  description: 'Plan a walking food crawl in a few clicks',
+  icons: {
+    icon: '/icon.svg',
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'Beli Trip Planner',
+    title: 'Beli Crawl',
   },
   formatDetection: {
     telephone: false,

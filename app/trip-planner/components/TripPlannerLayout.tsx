@@ -415,9 +415,17 @@ export default function TripPlannerLayout() {
 
       {/* Full-page crawl summary */}
       {showCrawlSummary && (
-        <div className="absolute inset-0 z-40 bg-white flex flex-col">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+          className="absolute inset-0 z-40 bg-white flex flex-col"
+        >
           {/* Back button (same position as other top-left buttons, but without shadow) */}
-          <button
+          <motion.button
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.2 }}
             onClick={() => setShowCrawlSummary(false)}
             className="absolute top-4 left-4 z-50 bg-white px-4 py-2.5 rounded-lg flex items-center gap-2 hover:bg-gray-50 active:bg-gray-100 min-h-[44px]"
             style={{
@@ -438,14 +446,19 @@ export default function TripPlannerLayout() {
                 d="M15 19l-7-7 7-7"
               />
             </svg>
-          </button>
+          </motion.button>
 
           {/* Title block */}
-          <div className="px-6 mt-16 mb-2 flex flex-col items-center">
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15, duration: 0.3, ease: "easeOut" }}
+            className="px-6 mt-16 mb-2 flex flex-col items-center"
+          >
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-beli-teal text-center">
               Your Beli Crawl is Complete!
             </h2>
-          </div>
+          </motion.div>
 
           <div className="flex-1 px-6 overflow-y-auto">
             {routeStops.length === 0 ? (
@@ -455,8 +468,15 @@ export default function TripPlannerLayout() {
             ) : (
               <ul className="divide-y divide-gray-200 max-w-md mx-auto">
                 {routeStops.map((stop, idx) => (
-                  <li
+                  <motion.li
                     key={stop.id}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                      delay: 0.25 + idx * 0.05,
+                      duration: 0.3,
+                      ease: "easeOut",
+                    }}
                     className="flex items-center justify-between py-4 text-sm"
                   >
                     <div className="flex flex-col">
@@ -481,13 +501,18 @@ export default function TripPlannerLayout() {
                     >
                       ×
                     </button>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             )}
           </div>
 
-          <div className="px-6 pb-8 pt-4 space-y-3 max-w-md mx-auto w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.3, ease: "easeOut" }}
+            className="px-6 pb-8 pt-4 space-y-3 max-w-md mx-auto w-full"
+          >
             <button
               onClick={handleOpenGoogleMaps}
               disabled={routeStops.length === 0}
@@ -518,8 +543,8 @@ export default function TripPlannerLayout() {
             >
               Start Over
             </button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
     </div>
   );
