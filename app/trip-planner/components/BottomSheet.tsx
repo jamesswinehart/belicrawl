@@ -188,7 +188,7 @@ export default function BottomSheet({
           className="shrink-0"
         >
           <div
-            className="flex items-center justify-center mt-3 mb-4 py-3"
+            className="flex items-center justify-center mt-3 mb-4"
             onClick={handleToggle}
             onPointerDown={(e) => {
               // Only allow dragging the sheet from the handle area.
