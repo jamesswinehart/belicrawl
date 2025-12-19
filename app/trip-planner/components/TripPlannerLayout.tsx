@@ -267,7 +267,7 @@ export default function TripPlannerLayout() {
           onClick={() => setIsTutorialOpen(true)}
           className="absolute top-4 left-4 z-20 bg-white px-4 py-2.5 rounded-lg flex items-center gap-2 hover:bg-gray-50 active:bg-gray-100 min-h-[44px]"
           style={{
-            top: "max(1rem, env(safe-area-inset-top, 0px) + 1rem)",
+            top: "max(1.5rem, env(safe-area-inset-top, 0px) + 1.5rem)",
             left: "max(1rem, env(safe-area-inset-left, 0px) + 1rem)",
             boxShadow: "0 4px 16px 4px rgba(0, 0, 0, 0.25)",
           }}
@@ -291,7 +291,7 @@ export default function TripPlannerLayout() {
           }}
           className="absolute top-4 left-4 z-20 bg-white px-4 py-2.5 rounded-lg flex items-center gap-2 hover:bg-gray-50 active:bg-gray-100 min-h-[44px]"
           style={{
-            top: "max(1rem, env(safe-area-inset-top, 0px) + 1rem)",
+            top: "max(1.5rem, env(safe-area-inset-top, 0px) + 1.5rem)",
             left: "max(1rem, env(safe-area-inset-left, 0px) + 1rem)",
             boxShadow: "0 4px 16px 4px rgba(0, 0, 0, 0.25)",
           }}
@@ -393,9 +393,9 @@ export default function TripPlannerLayout() {
               Let’s go!
             </button>
 
-            <div className="mt-4 text-center space-y-1">
+            <div className="mt-4 text-center space-y-3">
               <p className="text-sm text-gray-600">
-                To the Beli team, for creating my favorite app, and Alistair, for joining me on Beli Crawls past and future.
+                To the Beli team, for creating my favorite app, and Alistair, for joining me on Beli Crawls past and future
               </p>
               <p className="text-sm text-gray-600">
                 Created with love by{" "}
@@ -422,14 +422,11 @@ export default function TripPlannerLayout() {
           className="absolute inset-0 z-40 bg-white flex flex-col"
         >
           {/* Back button (same position as other top-left buttons, but without shadow) */}
-          <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.2 }}
+          <button
             onClick={() => setShowCrawlSummary(false)}
             className="absolute top-4 left-4 z-50 bg-white px-4 py-2.5 rounded-lg flex items-center gap-2 hover:bg-gray-50 active:bg-gray-100 min-h-[44px]"
             style={{
-              top: 'max(1rem, env(safe-area-inset-top, 0px) + 1rem)',
+              top: 'max(1.5rem, env(safe-area-inset-top, 0px) + 1.5rem)',
               left: 'max(1rem, env(safe-area-inset-left, 0px) + 1rem)',
             }}
           >
@@ -446,7 +443,7 @@ export default function TripPlannerLayout() {
                 d="M15 19l-7-7 7-7"
               />
             </svg>
-          </motion.button>
+          </button>
 
           {/* Title block */}
           <motion.div

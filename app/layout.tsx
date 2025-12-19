@@ -7,6 +7,25 @@ export const metadata: Metadata = {
   icons: {
     icon: '/icon.svg',
   },
+  openGraph: {
+    title: 'Beli Crawl',
+    description: 'Plan a walking food crawl in a few clicks',
+    images: [
+      {
+        url: '/og-image.svg',
+        width: 1200,
+        height: 1200,
+        alt: 'Beli Crawl',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Beli Crawl',
+    description: 'Plan a walking food crawl in a few clicks',
+    images: ['/og-image.svg'],
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
