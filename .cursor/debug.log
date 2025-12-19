@@ -1,0 +1,2 @@
+{"sessionId":"debug-session","runId":"pre-fix","hypothesisId":"H1","location":"BottomSheet.tsx:useEffect[snap]","message":"snap_change","data":{"snap":"collapsed","target":268.3984375,"collapsedY":268.3984375,"minimizedY":544.3984375},"timestamp":1766130694304}
+{"sessionId":"debug-session","runId":"pre-fix","hypothesisId":"H1","location":"BottomSheet.tsx:useEffect[snap]","message":"snap_change","data":{"snap":"minimized","target":544.3984375,"collapsedY":268.3984375,"minimizedY":544.3984375},"timestamp":1766130695121}
