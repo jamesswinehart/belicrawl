@@ -376,10 +376,10 @@ export default function TripPlannerLayout() {
                 <span className="font-semibold">Pick a city</span> from the search box or nearby list (only Princeton and New York supported for now!)
               </li>
               <li>
-                <span className="font-semibold">Zoom the map</span> to the neighborhood or part of town you'd like to visit
+                <span className="font-semibold">Zoom the map</span> to the neighborhood or part of town you’d like to visit
               </li>
               <li>
-                <span className="font-semibold">Peruse restaurants</span> to build your crawl. See bookmarks and recommendations (based on James' Beli data for now!)
+                <span className="font-semibold">Peruse restaurants</span> to build your crawl. See bookmarks and recommendations (based on James’s Beli data for now!)
               </li>
               <li>
                 <span className="font-semibold">Create a crawl</span> to plan a trip with friends and receive a Google Maps route!
@@ -390,7 +390,7 @@ export default function TripPlannerLayout() {
               onClick={() => setIsTutorialOpen(false)}
               className="w-full mt-2 py-2.5 rounded-lg bg-beli-teal text-white text-sm font-medium hover:bg-beli-teal-dark active:bg-beli-teal-dark"
             >
-              Let's go!
+              Let’s go!
             </button>
 
             <div className="mt-4 text-center space-y-1">
