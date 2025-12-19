@@ -1,6 +1,6 @@
-import { redirect } from 'next/navigation';
+import TripPlannerLayout from './trip-planner/components/TripPlannerLayout';
 
 export default function Home() {
-  redirect('/trip-planner');
+  return <TripPlannerLayout />;
 }
 
